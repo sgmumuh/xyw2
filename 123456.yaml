@@ -170,7 +170,6 @@ rules:
   # Personal Define
   - DOMAIN,speed.cloudflare.com,CN
   - DOMAIN-SUFFIX,test-ipv6.com,CN
-  - DOMAIN,http://8.135.34.165/lfradius/libs/portal/unify/portal.php/login/main/nasid/1/?wlanuserip=172.25.102.243&wlanacname=gdkjxy&clientip=172.25.102.243&clientmac=0c:3a:fa:95:f2:a0&paip=172.18.100.100&vlan=3001.0&iarmdst=iytc.net/wordpress/?p=2046,DIRECT
   # Unbreak
   - RULE-SET,Unbreak,CN
   # Advertising & Hijacking & Privacy
@@ -236,6 +235,8 @@ rules:
   - GEOIP,LAN,DIRECT
   # FINAL
   - MATCH,Switch
+  # xyw
+  - DOMAIN-KEYWORD,8.135.34.165,DIRECT
 #--------------------------------------------------------------------------------------#
 rule-providers:
   Unbreak:
