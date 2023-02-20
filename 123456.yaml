@@ -167,6 +167,15 @@ rules:
   # UA
   - DST-PORT,80,Switch
   - DST-PORT,8080,Switch
+  # WeChat & QQ 
+- DST-PORT,80,Switch
+- DST-PORT,5222,Switch
+- DST-PORT,5223,Switch
+- DST-PORT,5228,Switch
+- DST-PORT,8000,Switch # UDP
+- DST-PORT,8001,Switch # UDP
+- DST-PORT,8080,Switch
+- DST-PORT,14000,Switch
   # Personal Define
   - DOMAIN,speed.cloudflare.com,CN
   - DOMAIN-SUFFIX,test-ipv6.com,CN
@@ -235,8 +244,6 @@ rules:
   - GEOIP,LAN,DIRECT
   # FINAL
   - MATCH,Switch
-  # xyw
-  - DOMAIN-KEYWORD,8.135.34.165,DIRECT
 #--------------------------------------------------------------------------------------#
 rule-providers:
   Unbreak:
