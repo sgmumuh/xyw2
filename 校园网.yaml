@@ -67,7 +67,7 @@ proxies:
 proxy-providers:
   Global-ISP:
     type: http
-    url: "https://bst.xlkjjs.top/link/94bc3edbadb63dea?clash=1"
+    url: "https://dy.jimaoyun.top/api/v1/client/subscribe?token=608de5bd9e837c7f5e08a9d5b4259312"
     interval: 3600
     path: "./Proxy-Providers/Global-ISP.yaml"
     health-check:
